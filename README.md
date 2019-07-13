@@ -24,9 +24,9 @@ In order to use this tool, you should format your logs (Debug.Log etc.) like thi
 ```
 Debug.Log("[CLASS NAME] Real Log Message")
 ```
-Or even better, you can implement your own Logger class for handling this.
+Or optionally, you can check out [SLUG - Unity Logger](https://github.com/excalith/slug-unity-logger) which does the same thing, except for writing down `[Class Name]` manually.
 
-With this way, slug can parse any log message starting with `[` and create a markdown entry.
+Either way, slug can parse all log messages starting with `[` and create a markdown table.
 
 ## How To Use
 ### Install 

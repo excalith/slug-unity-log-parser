@@ -16,16 +16,15 @@ ProcessArgs()
 
 function ProcessArgs() {
     if (input === undefined) {
+        console.log('')
         ora('Missing Engine Log File').fail()
+        console.log('')
+        ShowHelp()
         return
     }
     else if (input === '-h' || input === '--help')
     {
-        console.log('')
-        console.log('    usage: slug [engine.log file path]')
-        console.log('')
-        console.log('   -h --help      Shows this help')
-        console.log('   -v --version   Checks for updates')
+        ShowHelp()
         return
     }
     else if (input === '-v' || input === '--version')
@@ -35,6 +34,15 @@ function ProcessArgs() {
     }
 
     ParseLog(input)
+}
+
+function ShowHelp()
+{
+    console.log('')
+    console.log('usage: slug path/to/engine.log')
+    console.log('')
+    console.log('       slug -h --help      Shows this help')
+    console.log('       slug -v --version   Checks for updates') 
 }
 
 function ParseLog(path)
