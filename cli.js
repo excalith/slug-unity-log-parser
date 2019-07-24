@@ -96,7 +96,9 @@ function FormatException(line)
         line.startsWith('OverflowException') ||
         line.startsWith('InvalidCastException') ||
         line.startsWith('FormatException') ||
-        line.startsWith('ArgumentException')
+        line.startsWith('ArgumentException') ||
+        line.startsWith('ArgumentNullException') ||
+        line.startsWith('Exception')
     )
     {
         hasError = true
