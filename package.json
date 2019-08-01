@@ -1,6 +1,6 @@
 {
   "name": "slug-unity-log-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Creates markdown table for Unity3D log files",
   "main": "cli.js",
   "scripts": {

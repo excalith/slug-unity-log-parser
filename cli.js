@@ -98,7 +98,8 @@ function FormatException(line)
         line.startsWith('FormatException') ||
         line.startsWith('ArgumentException') ||
         line.startsWith('ArgumentNullException') ||
-        line.startsWith('Exception')
+        line.startsWith('Exception') ||
+        line.startsWith('ArrayTypeMismatchException')
     )
     {
         hasError = true
